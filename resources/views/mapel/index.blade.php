@@ -25,7 +25,7 @@
                     <table class="table">
                        <thead>
                             <tr>
-                                <th>Nomor</th>
+                                <th>NO</th>
                                 <th>Nama Mapel</th>
                                 <th colspan="3"><center>Aksi</center></th>
                              </tr>

@@ -34,23 +34,11 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                     <li>
-                        <a class="navbar-brand"
-                            href="{{route('kelas.index')}}">
-                        Daftar Kelas
-                        </a>
-
-                        <a class="navbar-brand"
-                            href="{{route('mapel.index')}}">
-                        Daftar Mapel
-                        </a>
-
-                        <a class="navbar-brand"
-                            href="{{route('siswa.index')}}">
-                        Daftar Siswa
-                        </a>
+                <a class="navbar-brand" href="{{route('kelas.index')}}">Daftar_Kelas</a>
+                <a class="navbar-brand" href="{{route('mapel.index')}}">Daftar_Mapel</a>
+                <a class="navbar-brand" href="{{route('siswa.index')}}">Daftar_Siswa</a>
                     </li>
                     </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->

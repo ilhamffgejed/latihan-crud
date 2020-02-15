@@ -13,7 +13,7 @@
                     @csrf
                     <div class="form-group">
                         <label>Kelas</label>
-                        <input type="text" name="nama" class="form-control" required>
+                        <input type="text" name="kelas" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Simpan </button>

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-20">
             <div class="card">
                 <div class="card-header">
                 Daftar Kelas
@@ -11,8 +11,7 @@
                  class="btn btn-primary float-right">
                  Tambah Data
                  </a>
-                 
-                </div>
+                </div>        
 
                 <div class="card-body">
                     @if (session('status'))
@@ -36,7 +35,7 @@
                             @foreach($kelas as $data)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{$data->nama}}</td>
+                                <td>{{$data->kelas}}</td>
                             
                             <form action="{{route('kelas.destroy',$data->id)}}" method="POST">
                             @csrf
@@ -50,14 +49,14 @@
                             </td>
                             
                             <td>
-                                <button type="submit" onclick="return confirm('Apakah Anda Yakin?');" class="btn btn-danger">
-                                Delete
-                                </button>
+                                <button type="submit" onclick="return confirm('Apakah Anda Yakin?');" class="btn btn-danger"> Delete </button>
                             </td>
                             </form>
                             </tr>
                         @endforeach
                         </tbody>
+                        </table>
+                        </div>
                 </div>
             </div>
         </div>

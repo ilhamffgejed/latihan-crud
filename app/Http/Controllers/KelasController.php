@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Kelas;
+use App\Siswa;
 use Illuminate\Http\Request;
 
 class KelasController extends Controller
@@ -42,7 +43,7 @@ class KelasController extends Controller
     public function store(Request $request)
     {
         $kelas = new Kelas();
-        $kelas->nama = $request->nama;
+        $kelas->kelas = $request->kelas;
         $kelas->save();
         return redirect()->route('kelas.index');
     }
@@ -55,8 +56,9 @@ class KelasController extends Controller
      */
     public function show($id)
     {
+        $siswa = Siswa::all();
         $kelas = Kelas::findOrFail($id);
-        return view('kelas.show',compact('kelas'));
+        return view('kelas.show',compact('kelas','siswa'));
     }
 
     /**
@@ -81,7 +83,7 @@ class KelasController extends Controller
     public function update(Request $request, $id)
     {
         $kelas = Kelas::findOrFail($id);
-        $kelas->nama =$request->nama;
+        $kelas->kelas =$request->kelas;
         $kelas->save();
         return redirect()->route('kelas.index');
     }

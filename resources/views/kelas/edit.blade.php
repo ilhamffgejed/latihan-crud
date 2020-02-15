@@ -14,7 +14,7 @@
                     @method('PATCH')
                     <div class="form-group">
                         <label>Kelas</label>
-                        <input type="text" name="nama" value="{{$kelas->nama}}" class="form-control" required>
+                        <input type="text" name="kelas" value="{{$kelas->kelas}}" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Ubah  </button>
